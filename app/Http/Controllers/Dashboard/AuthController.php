@@ -77,4 +77,16 @@ class AuthController extends Controller
         Auth::logout();
         return redirect()->route('login')->with('success','You have been logout Successfuly');
     }
+    public function dataTable(){
+        return view('dashboard.pages.dataTable');
+    }
+    public function defaultTable(){
+        return view('dashboard.pages.defaultTable');
+    }
+    public function defaultForm(){
+        return view('dashboard.pages.form');
+    }
+    public function defaultForm2(){
+        return view('dashboard.pages.component-form-layout');
+    }
 }

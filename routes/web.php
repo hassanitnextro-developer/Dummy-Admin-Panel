@@ -14,8 +14,11 @@ route::prefix('dashboard')->middleware('auth')->group(function(){
     route::get('panel',[AuthController::class,'index'])->name('index');
     route::get('profile',[AuthController::class,'showProfile'])->name('showProfile');
     route::put('updateProfile',[AuthController::class,'updateProfile'])->name('updateProfile');
-
-
+    // data table
+    route::get('data-table',[AuthController::class,'dataTable'])->name('data-table');
+    route::get('default-table',[AuthController::class,'defaultTable'])->name('default-table');
+    route::get('form-example',[AuthController::class,'defaultForm'])->name('default-form');
+    route::get('form-example2',[AuthController::class,'defaultForm2'])->name('default-form2');
 
     // logout
     route::get('logout',[AuthController::class,'logout'])->name('logout');

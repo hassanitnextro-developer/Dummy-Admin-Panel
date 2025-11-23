@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>LMS</title>
+  <title>Admin Template</title>
   <meta name="robots" content="noindex, follow">
   <meta name="description" content="web development agency">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
   <!-- Style CSS -->
   <link rel="stylesheet" href="{{asset('assets/css/output.css')}}">
-
+  <link rel="stylesheet" href="{{asset('assets/css/vendor/prism.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/css/vendor/summernote.min.css')}}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -29,8 +30,10 @@
 @yield('content')
 
 {{-- Javascript Links --}}
+
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/jquery.min.js"></script>
 <script src="{{asset('assets/js/vendor/apexcharts.min.js')}}"></script>
+<script src="{{asset('assets/js/vendor/summernote.min.js')}}"></script>
 <script src="{{asset('assets/js/vendor/flowbite.min.js')}}"></script>
 <script src="{{asset('assets/js/vendor/smooth-scrollbar/smooth-scrollbar.min.js')}}"></script>
 <script src="{{asset('assets/js/pages/dashboard-admin-lms.js')}}"></script>
@@ -38,6 +41,10 @@
 <script src="{{asset('assets/js/switcher.js')}}"></script>
 <script src="{{asset('assets/js/layout.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
+
+
+<script src="{{asset('assets/js/vendor/prism.min.js')}}"></script>
+<script src="{{asset('assets/js/component/prism-custom.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"b31fb7a3bbfb4b34a60444ccfef7f11e","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
